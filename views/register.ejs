@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Nuevo registro</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <section>
+    <h1>Registrarse</h1>
+    <form action="/register" method="post">
+      <label>Nombre: <input type="text" name="name" minlength="3" required></label><br>
+      <label>Correo: <input type="email" name="email" required></label><br>
+      <label>Contraseña: <input type="password" name="password" minlength="6" required></label><br>
+      <button type="submit">Registrarse</button>
+    </form>
+    <p>¿Ya tienes una cuenta existente? <a href="/login">Iniciar sesión</a></p>
+  </section>
+</body>
+</html>

@@ -1,7 +1,7 @@
 const express = require('express');
 const mysql = require('mysql2');
 const bodyParser = require('body-parser');
-const path = require('path'); // <-- agregado
+const path = require('path'); 
 
 const app = express();
 
