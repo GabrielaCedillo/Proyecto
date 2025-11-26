@@ -1,6 +1,6 @@
 body{
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background:#e6f0ff; /* azul muy claro */
+  background:#e6f0ff; 
   color:#222;
   padding:24px;
 }
@@ -8,7 +8,7 @@ body{
 section{
   margin:auto;
   max-width:900px;
-  text-align:center; /* centra títulos y el contenido principal */
+  text-align:center; 
 }
 
 table{
@@ -38,9 +38,9 @@ form{
   padding:20px;
   border-radius:10px;
   max-width:420px;
-  margin:40px auto; /* centra el formulario */
+  margin:40px auto; 
   box-shadow:0 3px 10px rgba(0,0,0,0.15);
-  text-align:left; /* el label y campos alineados dentro */
+  text-align:left; 
 }
 
 label{
@@ -54,7 +54,7 @@ input[type="text"],
 input[type="email"]{
   width:100%;
   padding:10px;
-  margin-bottom:18px; /* más separación */
+  margin-bottom:18px; 
   box-sizing:border-box;
   border:1px solid #ccc;
   border-radius:6px;
