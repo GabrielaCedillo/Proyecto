@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/login.css">
+    <style>body{font-family:Arial; text-align:center; margin-top:100px;}</style>
+</head>
+<body>
+    <h2>Inicia sesión para editar</h2>
+    
+    <% if (error) { %>
+        <p style="color:red"><%= error %></p>
+    <% } %>
+
+    <form method="POST" action="/login">
+        <input type="text" name="usuario" placeholder="Usuario" required><br><br>
+        <input type="password" name="password" placeholder="Contraseña" required><br><br>
+        <button type="submit">Entrar</button>
+    </form>
+    <br>
+    <a href="/">← Volver sin loguear</a>
+</body>
+</html>
