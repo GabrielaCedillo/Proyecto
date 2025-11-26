@@ -1,56 +1,85 @@
 body{
-  font-family: Arial, sans-serif;
-  background:#f7f7f7;
-  color:#0e0e0e;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background:#e6f0ff; /* azul muy claro */
+  color:#222;
   padding:24px;
 }
+
 section{
-    margin: auto;
-    max-width:900px;
+  margin:auto;
+  max-width:900px;
+  text-align:center; /* centra títulos y el contenido principal */
 }
+
 table{
   width:100%;
   border-collapse:collapse;
-  margin-bottom:24px;
+  margin:30px auto;
   background:#fff;
-  box-shadow:0 2px 0 1px rgba(0,0,0,0.05);
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 3px 8px rgba(0,0,0,0.12);
 }
-th,td{
-  padding:12px;
+
+th, td{
+  padding:14px;
   border-bottom:1px solid #eee;
   text-align:left;
+  font-size:15px;
 }
+
 th{
-  background:#f7f9fb;
+  background:#f4f6f8;
   font-weight:600;
 }
-a{
-  color:#1565c0;
-  text-decoration:none;
-  margin-right:10px;
-  transition: color .2s;
-}
+
 form{
   background:#fff;
-  padding:16px;
-  border-radius:8px;
-  max-width:500px;
+  padding:20px;
+  border-radius:10px;
+  max-width:420px;
+  margin:40px auto; /* centra el formulario */
+  box-shadow:0 3px 10px rgba(0,0,0,0.15);
+  text-align:left; /* el label y campos alineados dentro */
 }
-input[type="text"], 
+
+label{
+  display:block;
+  margin-bottom:6px;
+  font-size:15px;
+  font-weight:500;
+}
+
+input[type="text"],
 input[type="email"]{
   width:100%;
   padding:10px;
-  margin:6px 0 12px;
+  margin-bottom:18px; /* más separación */
   box-sizing:border-box;
   border:1px solid #ccc;
-  border-radius:5px;
+  border-radius:6px;
+  transition:border .2s, box-shadow .2s;
+  font-size:15px;
 }
+
+input[type="text"]:focus,
+input[type="email"]:focus{
+  border-color:#1976d2;
+  box-shadow:0 0 0 2px rgba(25,118,210,0.2);
+  outline:none;
+}
+
 button{
   background:#1976d2;
   color:#fff;
   border:none;
-  padding:10px 14px;
-  border-radius:5px;
+  padding:10px 16px;
+  border-radius:6px;
   cursor:pointer;
+  font-size:15px;
+  transition:background .2s;
 }
-button:hover{ opacity:0.95; }
+
+button:hover{
+  background:#125ea2;
+}
